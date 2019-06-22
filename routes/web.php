@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('my-captcha', 'HomeController@myCaptcha')->name('myCaptcha');
+Route::post('my-captcha', 'HomeController@myCaptchapost')->name('myCaptchapost');
+Route::get('refresh_captcha', 'HomeController@refreshcaptcha')->name('refresh_captcha');
